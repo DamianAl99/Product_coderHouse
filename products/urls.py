@@ -16,7 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from products.views import vista_contemplate
+from productsApp.views import create_products
 
 urlpatterns = [
     path('', vista_contemplate),
+
+    #methods from product app
+    path('create_products/', create_products)
 ]
