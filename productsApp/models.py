@@ -5,4 +5,7 @@ class ProductsApp(models.Model):
     price = models.FloatField()
     stock = models.BooleanField()
 
+class Category(models.Model):
+    name = models.CharField(max_length=50, unique=True)
+
 # Create your models here.
